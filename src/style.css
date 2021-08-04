@@ -1,0 +1,74 @@
+:root {
+    --blue: rgb(41, 42, 61);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 80rem) {
+    .row {
+        grid-template-columns: 50% 50%;
+    }  
+}
+
+@media screen and (max-width: 60rem) {
+    .row {
+        grid-template-columns: 100%;
+    }  
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .4rem;
+    max-width: 30rem;
+    padding: 1rem;
+    box-shadow: .2rem .2rem .5rem var(--blue);
+}
+
+.card img {
+    max-width: 10rem;
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    border-radius: .2rem;
+    padding: .7rem 1rem;
+    margin: 1rem .5rem;
+    font-weight: 700;
+}
+
+.btn-fav {
+    background-color: blue;
+    color: white;
+}
+
+.btn-read {
+    background-color: green;
+    color: white;
+}
+
+.d-none {
+    display: none;
+}
+
+/* TEST */
+.fav {
+    border: red solid 1rem;
+}
+
+.read {
+    background-color: green; 
+}
